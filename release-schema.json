@@ -37,7 +37,8 @@
             "string",
             "null"
           ],
-          "codelist": "exchangeRateSource.csv"
+          "codelist": "exchangeRateSource.csv",
+          "openCodelist": true
         }
       }
     },
