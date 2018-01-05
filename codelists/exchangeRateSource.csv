@@ -1,0 +1,4 @@
+Code,Title,Description
+contract,Contract,The exchange rate is specified in the contract.
+market,Market,The exchange rate was taken from the market on the date provided
+application,Application,The exchange rate was selected by the application processing data

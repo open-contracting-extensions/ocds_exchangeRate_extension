@@ -1,0 +1,60 @@
+{
+  "definitions": {
+    "ExchangeRate": {
+      "title": "Exchange Rate",
+      "description": "The exchange rate used, or to be used, to convert amount into an alternative currency.",
+      "type": "object",
+      "properties": {
+        "rate": {
+          "title": "Currency conversion rate",
+          "description": "The rate to use in converting amount to the alternative currency. Amount x Rate = Alternative Currency Amount.",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "currency": {
+          "title": "Currency",
+          "description": "The destination currency for conversion of amount. Currency should always be specified using the uppercase 3-letter currency code from ISO4217.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date": {
+          "title": "Exchange rate date",
+          "description": "The date at which this exchange rate was current.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "source": {
+          "title": "Exchange rate source",
+          "description": "The source used to provide the value of the exchange rate, taken from the exchangeRateSource codelist.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "codelist": "exchangeRateSource.csv"
+        }
+      }
+    },
+    "Value": {
+      "properties": {
+        "exchangeRates": {
+          "title": "Exchange rates",
+          "description": "Used to specify any exchange rates used, or to be used, to convert from amount to an alternative currency. To include alternative currency values within the data itself, add an 'amount_CODE' property alongside amount (e.g. amount_USD). See the extension documentation for more details.  ",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/ExchangeRate"
+          }
+        }
+      }
+    }
+  }
+}
