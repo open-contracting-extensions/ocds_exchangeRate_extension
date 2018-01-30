@@ -74,7 +74,7 @@ For example, an application which reads in OCDS data in multiple currencies, but
 }
 ```
 
-Applications are then able to access the original currency value (`amount` and `currency`, and the normalised amount `amount_USD`).
+Applications are then able to access the original currency value (`amount` and `currency`, and the normalized amount `amount_USD`).
 
 Note that the schema extension does not currently declare support for this convention, so it's use will trigger 'additional field' warnings on the [OCDS Validator](http://standard.open-contracting.org/validator/)
 
