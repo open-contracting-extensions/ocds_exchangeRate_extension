@@ -15,7 +15,7 @@ There are situations where:
 1. A contract, agreement or policy states that any currency conversion that takes place should use a particular exchange rate, or the rate as of a particular date;
 1. Values have been converted from an alternative currency (e.g. during data production, or by an application displaying data) into a single normalized currency.
 
-The exchange rate extension can be used to explicitly declare the exchange rate used, where the rate is specified, and the data used for currency conversions.
+The exchange rate extension can be used to explicitly declare the exchange rate used, where the rate is specified, and the date used for currency conversions.
 
 ## Listing exchange rates
 
