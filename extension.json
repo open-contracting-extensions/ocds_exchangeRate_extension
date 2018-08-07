@@ -13,5 +13,8 @@
   ],
   "codelists": [
     "exchangeRateSource.csv"
+  ],
+  "schemas": [
+    "release-schema.json"
   ]
 }
