@@ -53,7 +53,8 @@
           ],
           "items": {
             "$ref": "#/definitions/ExchangeRate"
-          }
+          },
+          "wholeListMerge": true
         }
       }
     }
