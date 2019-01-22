@@ -89,3 +89,9 @@ This extension was discussed in <https://github.com/open-contracting/standard/is
 ## Issues
 
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
+
+## Changelog
+
+### 2018-12-21
+
+* Set `wholeListMerge` on `Value.exchangeRates`
