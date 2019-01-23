@@ -6,7 +6,7 @@
     "en": "This extension describes how to specify exchange rates. "
   },
   "documentationUrl": {
-    "en": "https://github.com/open-contracting/ocds_exchangeRate_extension"
+    "en": "https://github.com/open-contracting-extensions/ocds_exchangeRate_extension"
   },
   "compatibility": [
     "1.1"
