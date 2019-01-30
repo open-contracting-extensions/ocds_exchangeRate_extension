@@ -78,19 +78,13 @@ Applications are then able to access the original currency value (`amount` and `
 
 Note that the schema extension does not currently declare support for this convention, so it's use will trigger 'additional field' warnings on the [OCDS Validator](http://standard.open-contracting.org/validator/)
 
-## ToDo
-
-Add pattern properties to validate `amount_CODE` fields.
-
-## Discussion
-
-This extension was discussed in <https://github.com/open-contracting/standard/issues/384>.
-
 ## Issues
 
 Report issues for this extension in the [ocds-extensions repository](https://github.com/open-contracting/ocds-extensions/issues), putting the extension's name in the issue's title.
 
 ## Changelog
+
+This extension was originally discussed in <https://github.com/open-contracting/standard/issues/384>.
 
 ### 2018-12-21
 
