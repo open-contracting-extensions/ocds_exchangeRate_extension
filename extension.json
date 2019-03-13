@@ -3,7 +3,7 @@
     "en": "Exchange Rate"
   },
   "description": {
-    "en": "This extension describes how to specify exchange rates. "
+    "en": "Adds a field to indicate one or more exchange rates."
   },
   "documentationUrl": {
     "en": "https://github.com/open-contracting-extensions/ocds_exchangeRate_extension"
