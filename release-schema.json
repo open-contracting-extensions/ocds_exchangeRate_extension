@@ -46,7 +46,7 @@
       "properties": {
         "exchangeRates": {
           "title": "Exchange rates",
-          "description": "Used to specify any exchange rates used, or to be used, to convert from amount to an alternative currency. To include alternative currency values within the data itself, add an 'amount_CODE' property alongside amount (e.g. amount_USD). See the extension documentation for more details.  ",
+          "description": "Used to specify any exchange rates used, or to be used, to convert from amount to an alternative currency. To include alternative currency values within the data itself, add an 'amount_CODE' property alongside amount (e.g. amount_USD). See the extension documentation for more details.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/ExchangeRate"
