@@ -86,6 +86,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 This extension was originally discussed in <https://github.com/open-contracting/standard/issues/384>.
 
+### 2019-03-20
+
+* Set `"uniqueItems": true` on array fields.
+
 ### 2018-12-21
 
 * Set `wholeListMerge` on `Value.exchangeRates`
