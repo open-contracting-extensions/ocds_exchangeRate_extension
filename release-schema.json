@@ -51,7 +51,8 @@
           "items": {
             "$ref": "#/definitions/ExchangeRate"
           },
-          "wholeListMerge": true
+          "wholeListMerge": true,
+          "uniqueItems": true
         }
       }
     }
