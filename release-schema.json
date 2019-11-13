@@ -54,6 +54,14 @@
           "wholeListMerge": true,
           "uniqueItems": true
         }
+      },
+      "patternProperties": {
+        "^amount_.+$": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
       }
     }
   }
