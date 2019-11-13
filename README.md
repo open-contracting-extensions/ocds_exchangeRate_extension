@@ -4,8 +4,8 @@ Every financial value in OCDS data should specify the currency it is provided in
 
 ```json
 {
-    "amount":1000,
-    "currency":"USD"
+  "amount": 1000,
+  "currency": "USD"
 }
 ```
 
@@ -69,7 +69,7 @@ For example, an application which reads in OCDS data in multiple currencies, but
   "value": {
     "amount": 6563700,
     "currency": "MXN",
-    "amount_USD": 426640.50
+    "amount_USD": 426640.5
   }
 }
 ```
