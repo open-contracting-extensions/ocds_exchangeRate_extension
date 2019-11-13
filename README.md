@@ -4,8 +4,12 @@ Every financial value in OCDS data should specify the currency it is provided in
 
 ```json
 {
-  "amount": 1000,
-  "currency": "USD"
+  "tender": {
+    "value": {
+      "amount": 1000,
+      "currency": "USD"
+    }
+  }
 }
 ```
 
@@ -40,17 +44,19 @@ The following example shows:
 
 ```json
 {
-  "value": {
-    "amount": 6563700,
-    "currency": "MXN",
-    "exchangeRates": [
-      {
-        "currency": "USD",
-        "rate": 0.065,
-        "date": "2015-11-04T00:00:00-05:00",
-        "source": "contract"
-      }
-    ]
+  "tender": {
+    "value": {
+      "amount": 6563700,
+      "currency": "MXN",
+      "exchangeRates": [
+        {
+          "currency": "USD",
+          "rate": 0.065,
+          "date": "2015-11-04T00:00:00-05:00",
+          "source": "contract"
+        }
+      ]
+    }
   }
 }
 ```
@@ -66,10 +72,12 @@ For example, an application which reads in OCDS data in multiple currencies, but
 
 ```json
 {
-  "value": {
-    "amount": 6563700,
-    "currency": "MXN",
-    "amount_USD": 426640.5
+  "tender": {
+    "value": {
+      "amount": 6563700,
+      "currency": "MXN",
+      "amount_USD": 426640.5
+    }
   }
 }
 ```
