@@ -30,9 +30,9 @@ The `exchangeRates` array can contain one or more `ExchangeRate` objects, consis
 * `currency` - The destination currency for conversion of amount. Currency should always be specified using the uppercase 3-letter currency code from ISO4217.
 * `rate` - The rate to use in converting amount to the alternative currency. Amount x Rate = Alternative Currency Amount.
 * `date` - The date at which this exchange rate was current.
-* `source` - The source used to provide the value of the exchange rate, taken from the 'exchangeRateSource' codelist.
+* `source` - The source used to provide the value of the exchange rate, taken from the `exchangeRateSource.csv` codelist.
 
-'exchangeRateSource' is an open codelist with the following initial values:
+`exchangeRateSource.csv` is an open codelist with the following initial values:
 
 * contract - The exchange rate is specified in the contract.
 * market - The exchange rate was taken from the market on the date provided
@@ -66,7 +66,7 @@ The following example shows:
 The exchange rate extension does not provide a way to express the converted value. However, applications and publishers are encouraged to adopt the following convention for including multiple currency **values** within the `value` object.
 
 * `amount` should always be the value in the currency specified by `currency`.
-* `amount_CODE` can be used to provide the amount in an alternative currency, where 'CODE' is the ISO4217 code of that currency.
+* `amount_CODE` can be used to provide the amount in an alternative currency, where `CODE` is the ISO4217 code of that currency.
 
 For example, an application which reads in OCDS data in multiple currencies, but wishes to display all data to users in US Dollars ($) would perform currency conversion (guided by `exchangeRates` where available) and would insert the property `amount_USD` as shown in the example below.
 
