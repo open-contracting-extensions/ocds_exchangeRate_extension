@@ -92,6 +92,10 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### 2020-04-24
+
+* Add `minProperties`, `minItems` and/or `minLength` properties.
+
 This extension was originally discussed in <https://github.com/open-contracting/standard/issues/384>.
 
 ### 2019-11-13

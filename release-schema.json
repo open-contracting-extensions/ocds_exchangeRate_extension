@@ -19,7 +19,8 @@
           "type": [
             "string",
             "null"
-          ]
+          ],
+          "minLength": 1
         },
         "date": {
           "title": "Exchange rate date",
@@ -38,9 +39,11 @@
             "null"
           ],
           "codelist": "exchangeRateSource.csv",
-          "openCodelist": true
+          "openCodelist": true,
+          "minLength": 1
         }
-      }
+      },
+      "minProperties": 1
     },
     "Value": {
       "properties": {
@@ -52,7 +55,8 @@
             "$ref": "#/definitions/ExchangeRate"
           },
           "wholeListMerge": true,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "minItems": 1
         }
       },
       "patternProperties": {
