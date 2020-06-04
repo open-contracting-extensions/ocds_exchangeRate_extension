@@ -33,7 +33,7 @@
         },
         "source": {
           "title": "Exchange rate source",
-          "description": "The source used to provide the value of the exchange rate, taken from the exchangeRateSource codelist.",
+          "description": "The source used to provide the value of the exchange rate.",
           "type": [
             "string",
             "null"
