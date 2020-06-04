@@ -27,7 +27,7 @@ The extension adds an `exchangeRates` array to every `value` object. Use of the 
 
 The `exchangeRates` array can contain one or more `ExchangeRate` objects, consisting of:
 
-* `currency` - The destination currency for conversion of amount. Currency should always be specified using the uppercase 3-letter currency code from ISO4217.
+* `currency` - The destination currency for conversion of amount. Currency must be specified using the uppercase 3-letter currency code from ISO4217.
 * `rate` - The rate to use in converting amount to the alternative currency. Amount x Rate = Alternative Currency Amount.
 * `date` - The date at which this exchange rate was current.
 * `source` - The source used to provide the value of the exchange rate, taken from the `exchangeRateSource.csv` codelist.
@@ -65,8 +65,8 @@ The following example shows:
 
 The exchange rate extension does not provide a way to express the converted value. However, applications and publishers are encouraged to adopt the following convention for including multiple currency **values** within the `value` object.
 
-* `amount` should always be the value in the currency specified by `currency`.
-* `amount_CODE` can be used to provide the amount in an alternative currency, where `CODE` is the ISO4217 code of that currency.
+* `amount` must be the value in the currency specified by `currency`.
+* `amount_CODE` may be used to provide the amount in an alternative currency, where `CODE` is the ISO4217 code of that currency.
 
 For example, an application which reads in OCDS data in multiple currencies, but wishes to display all data to users in US Dollars ($) would perform currency conversion (guided by `exchangeRates` where available) and would insert the property `amount_USD` as shown in the example below.
 
@@ -92,11 +92,14 @@ Report issues for this extension in the [ocds-extensions repository](https://git
 
 ## Changelog
 
+### 2020-06-04
+
+* Set `codelist`, `openCodelist` and `enum` on `ExchangeRate.currency`
+* Review normative and non-normative words.
+
 ### 2020-04-24
 
 * Add `minProperties`, `minItems` and/or `minLength` properties.
-
-This extension was originally discussed in <https://github.com/open-contracting/standard/issues/384>.
 
 ### 2019-11-13
 
@@ -109,3 +112,5 @@ This extension was originally discussed in <https://github.com/open-contracting/
 ### 2018-12-21
 
 * Set `wholeListMerge` on `Value.exchangeRates`
+
+This extension was originally discussed in <https://github.com/open-contracting/standard/issues/384>.
