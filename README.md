@@ -68,7 +68,7 @@ The exchange rate extension does not provide a way to express the converted valu
 * `amount` must be the value in the currency specified by `currency`.
 * `amount_CODE` may be used to provide the amount in an alternative currency, where `CODE` is the ISO4217 code of that currency.
 
-For example, an application which reads in OCDS data in multiple currencies, but wishes to display all data to users in US Dollars ($) would perform currency conversion (guided by `exchangeRates` where available) and would insert the property `amount_USD` as shown in the example below.
+For example, an application which reads in OCDS data in multiple currencies, but wishes to display all data to users in US Dollars ($) would perform currency conversion (guided by `exchangeRates` where available) and would insert the `amount_USD` field as shown in the example below.
 
 ```json
 {
