@@ -21,23 +21,6 @@ There are situations where:
 
 The exchange rate extension can be used to explicitly declare the exchange rate used, where the rate is specified, and the date used for currency conversions.
 
-## Listing exchange rates
-
-The extension adds an `exchangeRates` array to every `value` object. Use of the extension is optional in all places it occurs.
-
-The `exchangeRates` array can contain one or more `ExchangeRate` objects, consisting of:
-
-* `currency` - The destination currency for conversion of amount. Currency must be specified using the uppercase 3-letter currency code from ISO4217.
-* `rate` - The rate to use in converting amount to the alternative currency. Amount x Rate = Alternative Currency Amount.
-* `date` - The date at which this exchange rate was current.
-* `source` - The source used to provide the value of the exchange rate, taken from the `exchangeRateSource.csv` codelist.
-
-`exchangeRateSource.csv` is an open codelist with the following initial values:
-
-* contract - The exchange rate is specified in the contract.
-* market - The exchange rate was taken from the market on the date provided
-* application - The exchange rate was selected by the application processing data
-
 ## Example
 
 The following example shows:
