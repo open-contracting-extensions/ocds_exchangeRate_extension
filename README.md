@@ -1,4 +1,6 @@
-# Exchange Rate Extension
+# Exchange rate
+
+**This is a draft extension and is not recommended for use. Please contribute to [this GitHub issue](https://github.com/open-contracting/standard/issues/384).**
 
 Every financial value in OCDS data should specify the currency it is provided in. For example:
 
