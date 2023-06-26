@@ -20,7 +20,6 @@
             "string",
             "null"
           ],
-          "minLength": 1,
           "codelist": "currency.csv",
           "openCodelist": false,
           "enum": [
@@ -327,7 +326,8 @@
             "ZWN",
             "ZWR",
             null
-          ]
+          ],
+          "minLength": 1
         },
         "date": {
           "title": "Exchange rate date",
